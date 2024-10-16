@@ -10,8 +10,12 @@ const errorMessage = document.getElementById('error-message');
 loginBtn.addEventListener('click', () => {
     // Memeriksa apakah password yang dimasukkan benar
     if (passwordInput.value === correctPassword) {
-        window.location.href = 'biodata.html'; // Arahkan ke halaman biodata jika password benar
+        // Password benar, tampilkan pesan berhasil
+        errorMessage.textContent = 'Login berhasil!';
+        errorMessage.style.color = 'green'; // Ubah warna pesan menjadi hijau untuk keberhasilan
     } else {
-        errorMessage.textContent = 'Password salah, coba lagi.'; // Tampilkan pesan kesalahan
+        // Password salah, tampilkan pesan kesalahan
+        errorMessage.textContent = 'Password salah, coba lagi.';
+        errorMessage.style.color = 'red'; // Ubah warna pesan menjadi merah untuk kesalahan
     }
 });
