@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="foto.jpg" alt="Foto Profil">
+            <h1>Elisa Putri</h1>
+            <p class="job-title">Job Title: 4lishanugrah</p>
+        </div>
+        
+        <div class="info">
+            <h2>Informasi Pribadi</h2>
+            <p><strong>Tanggal Lahir:</strong> 06/10/2007</p>
+            <p><strong>Umur:</strong> 17 Tahun</p>
+            <p><strong>Alamat:</strong> Karangayar</p>
+            <p><strong>Email:</strong> @elisaputri</p>
+            <p><strong>Hobi:</strong> Belajar, Memasak</p>
+            <p><strong>Warna Favorit:</strong> Merah Muda</p>
+            <p><strong>Makanan Favorit:</strong> Seblak</p>
+            <p><strong>Musik Favorit:</strong> Pop</p>
+        </div>
+
+        <!-- Tombol Logout -->
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+
+        <div class="footer">
+            <p>&copy; 2024 Biodata. Semua hak dilindungi oleh saya.</p>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            const confirmLogout = confirm("Apakah Anda yakin ingin logout?");
+            if (confirmLogout) {
+                // Arahkan pengguna ke halaman login
+                window.location.href = "index.html";
+            }
+        }
+
+        // Event listener untuk tombol logout
+        document.getElementById('logoutBtn').addEventListener('click', logout);
+    </script>
+</body>
+</html>
