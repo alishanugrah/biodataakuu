@@ -19,36 +19,25 @@
             <p><strong>Tanggal Lahir:</strong> 06/10/2007</p>
             <p><strong>Umur:</strong> 17 Tahun</p>
             <p><strong>Alamat:</strong> Karangayar</p>
-            <p><strong>Email:</strong> putrielisa563@gmail.com</p>
-            <p><strong>No. Hp:</strong> 085879530370</p>
-            <p><strong>Hobi:</strong> Memasak, Jajan</p>
+            <p><strong>EML:</strong> putrielisa563@gmail.com</p>
+            <p><strong>No. HP:</strong> 085879530370</p>
+            <p><strong>Hobi:</strong> Memasak, Jajajn</p>
             <p><strong>Warna Favorit:</strong> Pink</p>
             <p><strong>Makanan Favorit:</strong> Seblak</p>
             <p><strong>Musik Favorit:</strong> Pop</p>
         </div>
 
-        <!-- Menambahkan GIF di bawah informasi -->
         <img src="love.gif" alt="GIF Animasi" style="display: block; margin: 20px auto; width: 150px;">
 
-        <!-- Tombol Logout -->
         <button id="logoutBtn" class="logout-btn">Logout</button>
 
         <div class="footer">
             <p>&copy; 2024 Biodata. Semua hak dilindungi oleh saya.</p>
         </div>
+
+        <p id="message"></p>
     </div>
 
-    <script>
-        function logout() {
-            const confirmLogout = confirm("Apakah Anda yakin ingin logout?");
-            if (confirmLogout) {
-                // Arahkan pengguna ke halaman login
-                window.location.href = "index.html";
-            }
-        }
-
-        // Event listener untuk tombol logout
-        document.getElementById('logoutBtn').addEventListener('click', logout);
-    </script>
+    <script src="biodata.js"></script>
 </body>
 </html>
