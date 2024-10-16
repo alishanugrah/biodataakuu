@@ -11,7 +11,7 @@ loginBtn.addEventListener('click', () => {
     // Memeriksa apakah password yang dimasukkan benar
     if (passwordInput.value === correctPassword) {
         // Password benar, tampilkan pesan berhasil
-        errorMessage.textContent = 'Login berhasil!';
+        errorMessage.textContent = 'biodata.html';
         errorMessage.style.color = 'green'; // Ubah warna pesan menjadi hijau untuk keberhasilan
     } else {
         // Password salah, tampilkan pesan kesalahan
