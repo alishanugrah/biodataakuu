@@ -7,27 +7,23 @@
 
 body {
    font-family: 'Montserrat', sans-serif; /* Menggunakan font Montserrat */
-   background: linear-gradient(135deg, #ffccbc, #ffab91);
+   background-image: url('background.gif'); /* Path gambar yang ingin digunakan */
+   background-size: cover; /* Gambar memenuhi layar */
+   background-position: center; /* Posisikan gambar di tengah */
+   background-repeat: no-repeat; /* Jangan ulangi gambar */
    color: #333;
    padding: 20px;
    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh; /* Mengisi tinggi layar */
-   animation: backgroundAnimation 10s ease infinite; /* Animasi latar belakang */
-}
-
-@keyframes backgroundAnimation {
-   0% { background: linear-gradient(135deg, #ffccbc, #ffab91); }
-   50% { background: linear-gradient(135deg, #ffab91, #ffccbc); }
-   100% { background: linear-gradient(135deg, #ffccbc, #ffab91); }
 }
 
 .container {
-   max-width: 800px;
+   max-width: 1000px; /* Mengubah lebar maksimum kontainer */
    margin: auto;
-   background: #ffffff;
-   padding: 30px;
+   background: rgba(255, 255, 255, 0.8); /* Latar belakang kontainer transparan */
+   padding: 40px; /* Menambah padding untuk lebih banyak ruang di dalam kontainer */
    border-radius: 20px; /* Rounded corners */
    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
    position: relative;
@@ -49,13 +45,13 @@ body {
 .profile {
    text-align: center;
    position: relative; /* Posisi relatif untuk efek bayangan */
-   margin-bottom: 20px; /* Jarak bawah */
+   margin-bottom: 30px; /* Jarak bawah */
 }
 
 .profile img {
-   width: 160px;
-   height: 160px;
-   border-radius: 50%; /* Membuat foto bulat */
+   width: 200px; /* Mengubah lebar gambar profil untuk lebih besar */
+   height: 200px; /* Mengubah tinggi gambar profil untuk lebih besar */
+   border-radius: 24%; /* Membuat foto bulat */
    object-fit: cover;
    border: 5px solid #d5006d; /* Border untuk foto profil */
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Bayangan untuk gambar */
@@ -69,8 +65,8 @@ body {
 
 h1 {
    color: #d5006d;
-   margin-bottom: 15px;
-   font-size: 2.5rem; /* Ukuran font lebih besar */
+   margin-bottom: 20px; /* Tambah jarak bawah */
+   font-size: 3rem; /* Ukuran font lebih besar */
    text-transform: uppercase; /* Semua huruf kapital */
    letter-spacing: 1.5px; /* Jarak antar huruf */
    animation: fadeIn 0.5s ease-in-out; /* Animasi judul */
@@ -99,9 +95,9 @@ h1 {
 }
 
 .info p {
-   margin: 15px 0;
+   margin: 15px 0; /* Jarak antar paragraf */
    line-height: 1.6;
-   font-size: 1.1rem; /* Ukuran font untuk teks informasi */
+   font-size: 1.2rem; /* Ukuran font lebih besar untuk teks informasi */
    transition: color 0.3s; /* Transisi untuk warna teks */
 }
 
@@ -110,14 +106,14 @@ h1 {
 }
 
 button {
-   margin-top: 20px;
+   margin-top: 30px; /* Tambah jarak atas */
    background-color: #d5006d;
    color: white;
    border: none;
    border-radius: 10px; /* Rounded button */
-   padding: 12px 25px; /* Padding lebih besar */
+   padding: 15px 30px; /* Menambah padding untuk tombol */
    cursor: pointer;
-   font-size: 1rem; /* Ukuran font tombol */
+   font-size: 1.2rem; /* Ukuran font tombol lebih besar */
    font-weight: bold; /* Tebal */
    transition: background 0.3s ease, transform 0.3s ease; /* Transisi untuk latar belakang dan transform */
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
@@ -129,7 +125,7 @@ button:hover {
 }
 
 .footer {
-   margin-top: 20px;
+   margin-top: 30px; /* Tambah jarak atas */
    text-align: center;
    color: #777;
    font-size: 0.9em;
@@ -140,11 +136,11 @@ button:hover {
 
 @media (max-width: 600px) {
    .container {
-       padding: 15px;
+       padding: 15px; /* Padding lebih kecil pada kontainer */
    }
 
    .profile img {
-       width: 130px;
+       width: 130px; /* Ukuran gambar profil lebih kecil pada layar kecil */
        height: 130px;
    }
 
